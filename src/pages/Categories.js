@@ -79,7 +79,7 @@ export default class Categories extends React.Component {
 		render() {
 				return (
 						<Layout>
-								<h1>{this.props.match.params.slug.toUpperCase()}</h1>
+								<h1 style={{'text-align': 'center'}}>{this.props.match.params.slug.toUpperCase()}</h1>
 								<Container>
 										{this.onRenderList()}
 								</Container>
