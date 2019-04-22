@@ -14,9 +14,44 @@ const Container = styled.section`
 export default class Categories extends React.Component {
 		onRenderList = () => {
 				// get data and map here
-				return PhotographyData.map(({id, title, description, uri, imgUri}) => {
-						return <Cards key={id} title={title} description={description} uri={uri} imgUri={imgUri}/>
-				})
+				const slug = this.props.match.params.slug;
+				if (slug === "photography") {
+						return PhotographyData.map(({id, title, description, uri, imgUri}) => {
+								return <Cards key={id} title={title} description={description} uri={uri} imgUri={imgUri}/>
+						})
+				}
+				
+				if (slug === "mockups"){
+						return <h1>Mockups list here</h1>
+				}
+				
+				if (slug === "graphics"){
+						return <h1>Graphics list here</h1>
+				}
+				
+				if (slug === "fonts"){
+						return <h1>Fonts list here</h1>
+				}
+				
+				if (slug === "colours"){
+						return <h1>Colours list here</h1>
+				}
+				
+				if (slug === "video"){
+						return <h1>Video list here</h1>
+				}
+				
+				if (slug === "audio"){
+						return <h1>Audio list here</h1>
+				}
+				
+				if (slug === "tools"){
+						return <h1>Tools list here</h1>
+				}
+				
+				if (slug === "graphics"){
+						return <h1>Graphics list here</h1>
+				}
 		};
 		
 		render() {
