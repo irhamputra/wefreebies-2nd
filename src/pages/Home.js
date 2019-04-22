@@ -5,9 +5,10 @@ import {Helmet} from "react-helmet";
 import Layout from "../layout/Layout";
 import {dataList} from "../data/data";
 import CategoriesCards from "../components/CategoriesCards";
+import Hero from "../components/Hero";
 
 const Container = styled.section`
-	margin: auto 50px;
+	margin: -70px 100px 20px 100px;
 	display: grid;
 	grid-template-columns: auto auto auto;
 `;
@@ -25,6 +26,7 @@ class Home extends Component {
 								<Helmet>
 										<title>Home | WeFreebies</title>
 								</Helmet>
+								<Hero/>
 								<Container>
 										{this.onRenderList()}
 								</Container>

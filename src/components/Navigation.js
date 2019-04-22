@@ -12,7 +12,7 @@ const Nav = styled.div`
 	justify-content: space-between;
 	
 	a {
-		margin-right: 15px;
+		margin-right: 50px;
 		color: black;
 		text-decoration: none;
 
@@ -24,6 +24,9 @@ const Nav = styled.div`
 
 const NavBrand = styled.h1`
 	font-size: 2em;
+	a:hover {
+		text-decoration: none;
+	}
 `;
 
 const Navigation = () => {

@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import styled from 'styled-components';
 
 const CategoriesContainer = styled.div`
-	object-fit: contain;
+	background: white;
 	height: 300px;
 	padding: 20px;
 	margin: 20px;
@@ -12,11 +12,16 @@ const CategoriesContainer = styled.div`
 	justify-content: center;
 	align-content: center;
 	text-align: center;
+	border-radius: 7px;
+	
+	:hover{
+		box-shadow: 0 0 15px rgba(0,0,0, 0.3);
+	}
 `;
 
 const Title = styled.h1`
 	text-align: center;
-	color: white;
+	color: gray;
 	font-size: 20px;
 `;
 
@@ -26,9 +31,9 @@ const ImageContainer = styled.img`
 	width: 100px;
 `;
 
-const CategoriesCards = ({title, path, icon, imgUri}) => (
+const CategoriesCards = ({title, path, icon}) => (
 		<Link style={{'text-decoration':'none'}} to={`c/${path}`}>
-				<CategoriesContainer style={{'background': `url(${imgUri}) center center`}}>
+				<CategoriesContainer>
 						<ImageContainer src={icon} alt={icon}/>
 						<Title>{title}</Title>
 				</CategoriesContainer>

@@ -1,12 +1,12 @@
 export const dataList = [
-		{id: 1, title: "Photography", path: "photography", icon: "https://image.flaticon.com/icons/svg/1164/1164945.svg", imgUri:'https://images.unsplash.com/photo-1531845116688-48819b3b68d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80'},
-		{id: 2, title: "Mockups", path: "mockups", icon: "https://image.flaticon.com/icons/svg/1164/1164945.svg", imgUri: 'https://images.unsplash.com/photo-1531845116688-48819b3b68d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80'},
-		{id: 3, title: "Graphics", path: "graphics", icon: "https://image.flaticon.com/icons/svg/1164/1164945.svg", imgUri: 'https://images.unsplash.com/photo-1531845116688-48819b3b68d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80'},
-		{id: 4, title: "Textures", path: "textures", icon: "https://image.flaticon.com/icons/svg/1164/1164945.svg", imgUri: 'https://images.unsplash.com/photo-1531845116688-48819b3b68d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80'},
-		{id: 5, title: "Fonts", path: "fonts", icon: "https://image.flaticon.com/icons/svg/1164/1164945.svg", imgUri: 'https://images.unsplash.com/photo-1531845116688-48819b3b68d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80'},
-		{id: 6, title: "Colours", path: "colours", icon: "https://image.flaticon.com/icons/svg/1164/1164945.svg", imgUri: 'https://images.unsplash.com/photo-1531845116688-48819b3b68d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80'},
-		{id: 7, title: "Video", path: "video", icon: "https://image.flaticon.com/icons/svg/1164/1164945.svg", imgUri: 'https://images.unsplash.com/photo-1531845116688-48819b3b68d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80'},
-		{id: 9, title: "Tools", path: "tools", icon: "https://image.flaticon.com/icons/svg/1164/1164945.svg", imgUri: 'https://images.unsplash.com/photo-1531845116688-48819b3b68d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80'},
+		{id: 1, title: "Photography", path: "photography", icon: "https://image.flaticon.com/icons/svg/1042/1042390.svg", imgUri:'https://images.unsplash.com/photo-1531845116688-48819b3b68d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80'},
+		{id: 2, title: "Mockups", path: "mockups", icon: "https://image.flaticon.com/icons/svg/1042/1042420.svg", imgUri: 'https://images.unsplash.com/photo-1531845116688-48819b3b68d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80'},
+		{id: 3, title: "Graphics", path: "graphics", icon: "https://image.flaticon.com/icons/svg/1042/1042400.svg", imgUri: 'https://images.unsplash.com/photo-1531845116688-48819b3b68d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80'},
+		{id: 4, title: "Textures", path: "textures", icon: "https://image.flaticon.com/icons/svg/1042/1042392.svg", imgUri: 'https://images.unsplash.com/photo-1531845116688-48819b3b68d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80'},
+		{id: 5, title: "Fonts", path: "fonts", icon: "https://image.flaticon.com/icons/svg/1042/1042386.svg", imgUri: 'https://images.unsplash.com/photo-1531845116688-48819b3b68d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80'},
+		{id: 6, title: "Colours", path: "colours", icon: "https://image.flaticon.com/icons/svg/1042/1042388.svg", imgUri: 'https://images.unsplash.com/photo-1531845116688-48819b3b68d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80'},
+		{id: 7, title: "Video", path: "video", icon: "https://image.flaticon.com/icons/svg/1042/1042403.svg", imgUri: 'https://images.unsplash.com/photo-1531845116688-48819b3b68d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80'},
+		{id: 9, title: "Tools", path: "tools", icon: "https://image.flaticon.com/icons/svg/1042/1042423.svg", imgUri: 'https://images.unsplash.com/photo-1531845116688-48819b3b68d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80'},
 ];
 
 export const photographyData = [
