@@ -1,8 +1,12 @@
 import React from 'react';
+import {Helmet} from "react-helmet";
 import Layout from "../layout/Layout";
 
 const About = () => (
 		<Layout>
+				<Helmet>
+						<title>About | WeFreebies</title>
+				</Helmet>
 				<h1>About</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
 						magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea

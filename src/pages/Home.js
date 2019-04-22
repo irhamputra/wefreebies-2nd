@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
-import Layout from "../layout/Layout";
 import styled from 'styled-components';
-import {dataList} from "../data/data";
 import {Link} from "react-router-dom";
+import {Helmet} from "react-helmet";
+
+import Layout from "../layout/Layout";
+import {dataList} from "../data/data";
 
 const Container = styled.section`
 	margin: auto 50px;
@@ -23,6 +25,9 @@ class Home extends Component {
 		render() {
 				return (
 						<Layout>
+								<Helmet>
+										<title>Home | WeFreebies</title>
+								</Helmet>
 								<Container>
 										<ul>
 												{this.onRenderList()}

@@ -1,7 +1,9 @@
 import React from 'react';
+import styled from "styled-components";
+import {Helmet} from "react-helmet";
+
 import Layout from "../layout/Layout";
 import Cards from "../components/Cards";
-import styled from "styled-components";
 
 // Data
 // TODO: Create dynamic data CMS built in or Contentful or Hasura
@@ -45,7 +47,7 @@ export default class Categories extends React.Component {
 						})
 				}
 				
-				if (slug === "textures"){
+				if (slug === "textures") {
 						return texturesData.map(({id, title, description, uri, imgUri}) => {
 								return <Cards key={id} title={title} description={description} uri={uri} imgUri={imgUri}/>
 						})
@@ -76,10 +78,18 @@ export default class Categories extends React.Component {
 				}
 		};
 		
+		capitalizeLetter = (slug) => {
+				return slug.charAt(0).toUpperCase() + slug.slice(1)
+		};
+		
 		render() {
+				const {slug} = this.props.match.params;
 				return (
 						<Layout>
-								<h1 style={{'text-align': 'center'}}>{this.props.match.params.slug.toUpperCase()}</h1>
+								<Helmet>
+										<title>{this.capitalizeLetter(slug)} | WeFreebies</title>
+								</Helmet>
+								<h1 style={{'text-align': 'center'}}>{slug.toUpperCase()}</h1>
 								<Container>
 										{this.onRenderList()}
 								</Container>
