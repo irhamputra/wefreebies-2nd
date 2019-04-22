@@ -1,12 +1,12 @@
 export const dataList = [
-		{id: 1, title: "Photography", path: "photography", icon: "panorama"},
-		{id: 2, title: "Mockups", path: "mockups", icon: "web"},
-		{id: 3, title: "Graphics", path: "graphics", icon: "brush"},
-		{id: 4, title: "Textures", path: "textures", icon: "texture"},
-		{id: 5, title: "Fonts", path: "fonts", icon: "sort_by_alpha"},
-		{id: 6, title: "Colours", path: "colours", icon: "color_lens"},
-		{id: 7, title: "Video", path: "video", icon: "ondemand_video"},
-		{id: 9, title: "Tools", path: "tools", icon: "build"},
+		{id: 1, title: "Photography", path: "photography", icon: "https://image.flaticon.com/icons/svg/1164/1164945.svg", imgUri:'https://images.unsplash.com/photo-1531845116688-48819b3b68d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80'},
+		{id: 2, title: "Mockups", path: "mockups", icon: "https://image.flaticon.com/icons/svg/1164/1164945.svg", imgUri: 'https://images.unsplash.com/photo-1531845116688-48819b3b68d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80'},
+		{id: 3, title: "Graphics", path: "graphics", icon: "https://image.flaticon.com/icons/svg/1164/1164945.svg", imgUri: 'https://images.unsplash.com/photo-1531845116688-48819b3b68d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80'},
+		{id: 4, title: "Textures", path: "textures", icon: "https://image.flaticon.com/icons/svg/1164/1164945.svg", imgUri: 'https://images.unsplash.com/photo-1531845116688-48819b3b68d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80'},
+		{id: 5, title: "Fonts", path: "fonts", icon: "https://image.flaticon.com/icons/svg/1164/1164945.svg", imgUri: 'https://images.unsplash.com/photo-1531845116688-48819b3b68d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80'},
+		{id: 6, title: "Colours", path: "colours", icon: "https://image.flaticon.com/icons/svg/1164/1164945.svg", imgUri: 'https://images.unsplash.com/photo-1531845116688-48819b3b68d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80'},
+		{id: 7, title: "Video", path: "video", icon: "https://image.flaticon.com/icons/svg/1164/1164945.svg", imgUri: 'https://images.unsplash.com/photo-1531845116688-48819b3b68d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80'},
+		{id: 9, title: "Tools", path: "tools", icon: "https://image.flaticon.com/icons/svg/1164/1164945.svg", imgUri: 'https://images.unsplash.com/photo-1531845116688-48819b3b68d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80'},
 ];
 
 export const photographyData = [

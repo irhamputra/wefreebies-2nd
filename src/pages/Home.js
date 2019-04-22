@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import {Link} from "react-router-dom";
 import {Helmet} from "react-helmet";
 
 import Layout from "../layout/Layout";
 import {dataList} from "../data/data";
+import CategoriesCards from "../components/CategoriesCards";
 
 const Container = styled.section`
 	margin: auto 50px;
@@ -14,11 +14,8 @@ const Container = styled.section`
 
 class Home extends Component {
 		onRenderList = () => {
-				return dataList.map(({id, title, path, icon}) => {
-						return <li key={id}>
-								<h3>{title}</h3>
-								<Link to={`c/${path}`}>Go to categories</Link>
-						</li>
+				return dataList.map(({id, title, path, icon, imgUri}) => {
+						return <CategoriesCards key={id} title={title} path={path} icon={icon} imgUri={imgUri}/>
 				})
 		};
 		
@@ -29,9 +26,7 @@ class Home extends Component {
 										<title>Home | WeFreebies</title>
 								</Helmet>
 								<Container>
-										<ul>
-												{this.onRenderList()}
-										</ul>
+										{this.onRenderList()}
 								</Container>
 						</Layout>
 				);
