@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Layout from "../layout/Layout";
 import styled from 'styled-components';
-import {Data} from "../Data/data";
+import {dataList} from "../data/data";
 import {Link} from "react-router-dom";
 
 const Container = styled.section`
@@ -12,7 +12,7 @@ const Container = styled.section`
 
 class Home extends Component {
 		onRenderList = () => {
-				return Data.map(({id, title, path, icon}) => {
+				return dataList.map(({id, title, path, icon}) => {
 						return <li key={id}>
 								<h3>{title}</h3>
 								<Link to={`c/${path}`}>Go to categories</Link>

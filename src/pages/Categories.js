@@ -3,7 +3,18 @@ import Layout from "../layout/Layout";
 import Cards from "../components/Cards";
 import styled from "styled-components";
 
-import {PhotographyData} from "../Data/data";
+// Data
+// TODO: Create dynamic data CMS built in or Contentful or Hasura
+import {
+		photographyData,
+		coloursData,
+		fontsData,
+		graphicsData,
+		mockupsData,
+		texturesData,
+		toolsData,
+		videoData
+} from "../data/data";
 
 const Container = styled.section`
 	margin: auto 50px;
@@ -14,50 +25,61 @@ const Container = styled.section`
 export default class Categories extends React.Component {
 		onRenderList = () => {
 				// get data and map here
-				const slug = this.props.match.params.slug;
+				const {slug} = this.props.match.params;
+				
 				if (slug === "photography") {
-						return PhotographyData.map(({id, title, description, uri, imgUri}) => {
+						return photographyData.map(({id, title, description, uri, imgUri}) => {
 								return <Cards key={id} title={title} description={description} uri={uri} imgUri={imgUri}/>
 						})
 				}
 				
-				if (slug === "mockups"){
-						return <h1>Mockups list here</h1>
+				if (slug === "mockups") {
+						return mockupsData.map(({id, title, description, uri, imgUri}) => {
+								return <Cards key={id} title={title} description={description} uri={uri} imgUri={imgUri}/>
+						})
 				}
 				
-				if (slug === "graphics"){
-						return <h1>Graphics list here</h1>
+				if (slug === "graphics") {
+						return graphicsData.map(({id, title, description, uri, imgUri}) => {
+								return <Cards key={id} title={title} description={description} uri={uri} imgUri={imgUri}/>
+						})
 				}
 				
-				if (slug === "fonts"){
-						return <h1>Fonts list here</h1>
+				if (slug === "textures"){
+						return texturesData.map(({id, title, description, uri, imgUri}) => {
+								return <Cards key={id} title={title} description={description} uri={uri} imgUri={imgUri}/>
+						})
 				}
 				
-				if (slug === "colours"){
-						return <h1>Colours list here</h1>
+				if (slug === "fonts") {
+						return fontsData.map(({id, title, description, uri, imgUri}) => {
+								return <Cards key={id} title={title} description={description} uri={uri} imgUri={imgUri}/>
+						})
 				}
 				
-				if (slug === "video"){
-						return <h1>Video list here</h1>
+				if (slug === "colours") {
+						return coloursData.map(({id, title, description, uri, imgUri}) => {
+								return <Cards key={id} title={title} description={description} uri={uri} imgUri={imgUri}/>
+						})
 				}
 				
-				if (slug === "audio"){
-						return <h1>Audio list here</h1>
+				if (slug === "video") {
+						return videoData.map(({id, title, description, uri, imgUri}) => {
+								return <Cards key={id} title={title} description={description} uri={uri} imgUri={imgUri}/>
+						})
 				}
 				
-				if (slug === "tools"){
-						return <h1>Tools list here</h1>
-				}
-				
-				if (slug === "graphics"){
-						return <h1>Graphics list here</h1>
+				if (slug === "tools") {
+						return toolsData.map(({id, title, description, uri, imgUri}) => {
+								return <Cards key={id} title={title} description={description} uri={uri} imgUri={imgUri}/>
+						})
 				}
 		};
 		
 		render() {
 				return (
 						<Layout>
-								<h1>Categories: {this.props.match.params.slug}</h1>
+								<h1>{this.props.match.params.slug.toUpperCase()}</h1>
 								<Container>
 										{this.onRenderList()}
 								</Container>
