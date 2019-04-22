@@ -5,7 +5,7 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
 const Container = styled.section`
-   margin: 10px;
+   margin: 0;
    font-family: Roboto,serif;
 `;
 

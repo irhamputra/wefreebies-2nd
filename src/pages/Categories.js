@@ -19,9 +19,15 @@ import {
 } from "../data/data";
 
 const Container = styled.section`
-	margin: auto 50px;
+	margin: -50px 50px 10px 50px;
 	display: grid;
 	grid-template-columns: auto auto auto;
+`;
+
+const CategoriesStyle = styled.div`
+	padding: 100px 0;
+	background: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+	color: white;
 `;
 
 export default class Categories extends React.Component {
@@ -89,7 +95,9 @@ export default class Categories extends React.Component {
 								<Helmet>
 										<title>{this.capitalizeLetter(slug)} | WeFreebies</title>
 								</Helmet>
-								<h1 style={{'text-align': 'center'}}>{slug.toUpperCase()}</h1>
+								<CategoriesStyle>
+										<h1 style={{'text-align': 'center'}}>{slug.toUpperCase()}</h1>
+								</CategoriesStyle>
 								<Container>
 										{this.onRenderList()}
 								</Container>
