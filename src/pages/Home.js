@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import Layout from "../layout/Layout";
 import styled from 'styled-components';
-import Cards from "../components/Cards";
-import {PhotographyData} from "../Data/data";
+import {Data} from "../Data/data";
+import {Link} from "react-router-dom";
 
 const Container = styled.section`
 	margin: auto 50px;
@@ -11,21 +11,26 @@ const Container = styled.section`
 `;
 
 class Home extends Component {
-	onRenderList() {
-		return PhotographyData.map(({id, title, description, uri, imageUri}) => (
-			<Cards key={id} title={title} description={description} uri={uri} imgUri={imageUri} />
-		))
-	}
-	
-	render() {
-		return (
-			<Layout>
-				<Container>
-					{this.onRenderList()}
-				</Container>
-			</Layout>
-		);
-	}
+		onRenderList = () => {
+				return Data.map(({id, title, path, icon}) => {
+						return <li key={id}>
+								<h3>{title}</h3>
+								<Link to={`c/${path}`}>Go to categories</Link>
+						</li>
+				})
+		};
+		
+		render() {
+				return (
+						<Layout>
+								<Container>
+										<ul>
+												{this.onRenderList()}
+										</ul>
+								</Container>
+						</Layout>
+				);
+		}
 }
 
 export default Home;

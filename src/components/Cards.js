@@ -13,11 +13,6 @@ const Card = styled.div`
 `;
 
 export default class Cards extends Component {
-	constructor(props) {
-		super(props);
-		
-	}
-	
 	render() {
 		const {title, description, uri, imageUri} = this.props;
 		return (

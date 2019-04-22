@@ -10,11 +10,11 @@ const Container = styled.section`
 `;
 
 const Layout = props => (
-	<Container>
-		<Navigation/>
-		{props.children}
-		<Footer/>
-	</Container>
+		<Container>
+				<Navigation/>
+				{props.children}
+				<Footer/>
+		</Container>
 );
 
 export default Layout

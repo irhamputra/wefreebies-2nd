@@ -31,7 +31,7 @@ const Navigation = () => {
 			<div>
 				<NavLink to="/">Home</NavLink>
 				<NavLink to="/about">About</NavLink>
-				<a href="">Contribute</a>
+				<a href="https://github.com/irhamputra/wefreebies-2nd" target="_blank">Contribute</a>
 			</div>
 		</Nav>
 	)
