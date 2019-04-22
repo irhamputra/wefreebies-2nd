@@ -13,17 +13,17 @@ const Card = styled.div`
 `;
 
 export default class Cards extends Component {
-	render() {
-		const {title, description, uri, imageUri} = this.props;
-		return (
-			<Card>
-				<img src={imageUri} alt={title}/>
-				<h2>{title}</h2>
-				<p>{description}</p>
-				<button>
-					<a target="_blank" href={uri}>Go to page</a>
-				</button>
-			</Card>
-		);
-	}
+		render() {
+				const {title, description, uri, imageUri} = this.props;
+				return (
+						<Card>
+								<img src={imageUri} alt={title}/>
+								<h2>{title}</h2>
+								<p>{description}</p>
+								<button>
+										<a target="_blank" href={uri}>Go to page</a>
+								</button>
+						</Card>
+				);
+		}
 }

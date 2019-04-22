@@ -23,18 +23,18 @@ const NavBrand = styled.h1`
 `;
 
 const Navigation = () => {
-	return (
-		<Nav>
-			<NavBrand>
-				<NavLink to="/">WeFreebies</NavLink>
-			</NavBrand>
-			<div>
-				<NavLink to="/">Home</NavLink>
-				<NavLink to="/about">About</NavLink>
-				<a href="https://github.com/irhamputra/wefreebies-2nd" target="_blank">Contribute</a>
-			</div>
-		</Nav>
-	)
+		return (
+				<Nav>
+						<NavBrand>
+								<NavLink to="/">WeFreebies</NavLink>
+						</NavBrand>
+						<div>
+								<NavLink to="/">Home</NavLink>
+								<NavLink to="/about">About</NavLink>
+								<a href="https://github.com/irhamputra/wefreebies-2nd" target="_blank">Contribute</a>
+						</div>
+				</Nav>
+		)
 };
 
 export default Navigation;
