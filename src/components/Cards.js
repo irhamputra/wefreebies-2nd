@@ -7,9 +7,17 @@ const Card = styled.div`
 	border: 1px lightgrey solid;
 	border-radius: 5px;
 	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: stretch;
 	
 	:hover {
 		box-shadow: 1px 2px 10px rgba(0,0,0, 0.1);
+	}
+	
+	a {
+		text-decoration: none;
 	}
 `;
 
@@ -18,12 +26,14 @@ export default class Cards extends Component {
 				const {title, description, uri, imageUri} = this.props;
 				return (
 						<Card>
-								<img src={imageUri} alt={title}/>
-								<h2>{title}</h2>
+								<img width="100" src={imageUri ? imageUri : 'https://braou.ac.in/wp-content/themes/braou/images/noimagefound.jpg'} alt={title}/>
+								<h4>{title}</h4>
 								<p>{description}</p>
-								<button>
-										<a target="_blank" href={uri}>Go to page</a>
-								</button>
+								<a rel="noopener norefferer" target="_blank" href={uri}>
+										<button className="btn btn-secondary btn-block">
+												Go to page
+										</button>
+								</a>
 						</Card>
 				);
 		}

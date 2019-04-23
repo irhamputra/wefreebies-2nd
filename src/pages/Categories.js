@@ -41,50 +41,50 @@ export default class Categories extends React.Component {
 				const {slug} = this.props.match.params;
 				
 				if (slug === "photography") {
-						return photographyData.map(({id, title, description, uri, imgUri}) => {
-								return <Cards key={id} title={title} description={description} uri={uri} imgUri={imgUri}/>
+						return photographyData.map(({id, title, description, uri, imageUri}) => {
+								return <Cards key={id} title={title} description={description} uri={uri} imageUri={imageUri}/>
 						})
 				}
 				
 				if (slug === "mockups") {
-						return mockupsData.map(({id, title, description, uri, imgUri}) => {
-								return <Cards key={id} title={title} description={description} uri={uri} imgUri={imgUri}/>
+						return mockupsData.map(({id, title, description, uri, imageUri}) => {
+								return <Cards key={id} title={title} description={description} uri={uri} imageUri={imageUri}/>
 						})
 				}
 				
 				if (slug === "graphics") {
-						return graphicsData.map(({id, title, description, uri, imgUri}) => {
-								return <Cards key={id} title={title} description={description} uri={uri} imgUri={imgUri}/>
+						return graphicsData.map(({id, title, description, uri, imageUri}) => {
+								return <Cards key={id} title={title} description={description} uri={uri} imageUri={imageUri}/>
 						})
 				}
 				
 				if (slug === "textures") {
-						return texturesData.map(({id, title, description, uri, imgUri}) => {
-								return <Cards key={id} title={title} description={description} uri={uri} imgUri={imgUri}/>
+						return texturesData.map(({id, title, description, uri, imageUri}) => {
+								return <Cards key={id} title={title} description={description} uri={uri} imageUri={imageUri}/>
 						})
 				}
 				
 				if (slug === "fonts") {
-						return fontsData.map(({id, title, description, uri, imgUri}) => {
-								return <Cards key={id} title={title} description={description} uri={uri} imgUri={imgUri}/>
+						return fontsData.map(({id, title, description, uri, imageUri}) => {
+								return <Cards key={id} title={title} description={description} uri={uri} imageUri={imageUri}/>
 						})
 				}
 				
 				if (slug === "colours") {
-						return coloursData.map(({id, title, description, uri, imgUri}) => {
-								return <Cards key={id} title={title} description={description} uri={uri} imgUri={imgUri}/>
+						return coloursData.map(({id, title, description, uri, imageUri}) => {
+								return <Cards key={id} title={title} description={description} uri={uri} imageUri={imageUri}/>
 						})
 				}
 				
 				if (slug === "video") {
-						return videoData.map(({id, title, description, uri, imgUri}) => {
-								return <Cards key={id} title={title} description={description} uri={uri} imgUri={imgUri}/>
+						return videoData.map(({id, title, description, uri, imageUri}) => {
+								return <Cards key={id} title={title} description={description} uri={uri} imageUri={imageUri}/>
 						})
 				}
 				
 				if (slug === "tools") {
-						return toolsData.map(({id, title, description, uri, imgUri}) => {
-								return <Cards key={id} title={title} description={description} uri={uri} imgUri={imgUri}/>
+						return toolsData.map(({id, title, description, uri, imageUri}) => {
+								return <Cards key={id} title={title} description={description} uri={uri} imageUri={imageUri}/>
 						})
 				}
 		};

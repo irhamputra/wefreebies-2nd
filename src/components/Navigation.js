@@ -5,14 +5,14 @@ import styled from 'styled-components';
 const Nav = styled.div`
 	background: linear-gradient(to right, #0F2027, #203A43, #2C5364);
 	margin: 0;
-	padding: 0 4em;
+	padding: 1.5em 4em;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	
 	@media screen and (max-width: 420px){
 		flex-wrap: wrap;
-		padding: 0 40px 30px 40px;
+		padding: 30px 40px 30px 40px;
 	}
 	
 	a {
