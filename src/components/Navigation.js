@@ -3,29 +3,38 @@ import {NavLink} from "react-router-dom";
 import styled from 'styled-components';
 
 const Nav = styled.div`
-	background-color: white;
-	box-shadow: 0 0 1px lightgrey;
+	background: linear-gradient(to right, #0F2027, #203A43, #2C5364);
 	margin: 0;
 	padding: 0 4em;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	
+	@media screen and (max-width: 420px){
+		flex-wrap: wrap;
+		padding: 0 40px 30px 40px;
+	}
+	
 	a {
 		margin-right: 50px;
-		color: black;
+		color: white;
 		text-decoration: none;
 
 		:hover {
-			text-decoration: underline;
+		font-weight: 600;
 		}
 	}
 `;
 
 const NavBrand = styled.h1`
 	font-size: 2em;
+	
 	a:hover {
 		text-decoration: none;
+	}
+	
+	@media screen and (max-width: 420px){
+		text-align: center;
 	}
 `;
 

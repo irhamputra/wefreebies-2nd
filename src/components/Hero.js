@@ -5,8 +5,13 @@ const HeroContainer = styled.div`
 	background: linear-gradient(to right, #0F2027, #203A43, #2C5364);
 	color: white;
 	margin: 0;
-	padding: 50px 70px;
-	height: 450px;
+	padding: 70px;
+	height: 300px;
+	
+	@media screen and (max-width: 420px){
+		height: 550px;
+		padding: 40px;
+	}
 `;
 
 const Title = styled.h1`
@@ -17,7 +22,6 @@ const Title = styled.h1`
 const Hero = () => (
 		<HeroContainer>
 				<Title>
-						<h1>WeFreebies</h1>
 						A hand picked directory of the best free
 						<br/>resources for creative, because we love a free stuff 🖤
 				</Title>
