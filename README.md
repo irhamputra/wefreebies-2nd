@@ -1,3 +1,3 @@
 ## WeFreebies new edition
 
-Site is underconstruction
+(Site)[https://wefreebies.now.sh]
