@@ -22,10 +22,15 @@ const Container = styled.section`
 	margin: -50px 50px 10px 50px;
 	display: grid;
 	grid-template-columns: auto auto auto;
+	
+	@media screen and (max-width: 420px){
+		display: block;
+		margin: -60px 20px 10px 20px;
+	}
 `;
 
-const CategoriesStyle = styled.div`
-	padding: 100px 0;
+const CategoriesTitle = styled.div`
+	padding: 80px 0;
 	background: linear-gradient(to right, #0F2027, #203A43, #2C5364);
 	color: white;
 `;
@@ -95,9 +100,9 @@ export default class Categories extends React.Component {
 								<Helmet>
 										<title>{this.capitalizeLetter(slug)} | WeFreebies</title>
 								</Helmet>
-								<CategoriesStyle>
+								<CategoriesTitle>
 										<h1 style={{'text-align': 'center'}}>{slug.toUpperCase()}</h1>
-								</CategoriesStyle>
+								</CategoriesTitle>
 								<Container>
 										{this.onRenderList()}
 								</Container>

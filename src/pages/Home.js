@@ -12,13 +12,17 @@ const Container = styled.section`
 	display: grid;
 	grid-template-columns: auto auto auto;
 	
-	@media screen and (max-width: 420px){
-		margin: -70px 20px 20px 20px;
+	@media screen and (max-width: 769px){
+		margin: -100px 30px 30px 30px;
 	}
 	
 	@media screen and (max-width: 420px){
+		margin: -70px 20px 20px 20px;
 		display: block;
+
 	}
+	
+	
 `;
 
 class Home extends Component {

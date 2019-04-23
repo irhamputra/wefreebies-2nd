@@ -8,10 +8,17 @@ const HeroContainer = styled.div`
 	padding: 70px;
 	height: 300px;
 	
-	@media screen and (max-width: 420px){
+	@media screen and (max-width: 768px){
+		height: 400px;
+		padding: 50px;
+	}
+	
+	@media screen and (max-width: 414px){
 		height: 550px;
 		padding: 40px;
 	}
+	
+	
 `;
 
 const Title = styled.h1`

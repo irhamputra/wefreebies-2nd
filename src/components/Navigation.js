@@ -19,6 +19,10 @@ const Nav = styled.div`
 		margin-right: 50px;
 		color: white;
 		text-decoration: none;
+		
+		:last-child {
+			margin-right: 0;
+		}
 
 		:hover {
 		font-weight: 600;

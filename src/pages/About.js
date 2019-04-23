@@ -5,6 +5,10 @@ import styled from 'styled-components';
 
 const Container = styled.div`
 	margin: 70px;
+	
+	@media screen and (max-width: 420px){
+		margin: 50px 30px;
+	}
 `;
 
 const About = () => (
