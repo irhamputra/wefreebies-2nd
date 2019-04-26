@@ -8,7 +8,7 @@ import CategoriesCards from "../components/CategoriesCards";
 import Hero from "../components/Hero";
 
 const Container = styled.section`
-	margin: -70px 100px 20px 100px;
+	margin: 20px 105px;
 	display: grid;
 	grid-template-columns: auto auto auto;
 	
@@ -39,6 +39,10 @@ class Home extends Component {
 										<title>Home | WeFreebies</title>
 								</Helmet>
 								<Hero/>
+								<div className="container mt-5">
+										<h2>Categories</h2>
+										<p className="text-muted small">Resources field</p>
+								</div>
 								<Container>
 										{this.onRenderList()}
 								</Container>

@@ -3,9 +3,8 @@ import {NavLink} from "react-router-dom";
 import styled from 'styled-components';
 
 const Nav = styled.div`
-	background: linear-gradient(to right, #0F2027, #203A43, #2C5364);
 	margin: 0;
-	padding: 1.5em 4em;
+	padding: 1.5em 0;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -17,7 +16,7 @@ const Nav = styled.div`
 	
 	a {
 		margin-right: 50px;
-		color: white;
+		color: #0F2027;
 		text-decoration: none;
 		
 		:last-child {
@@ -44,16 +43,20 @@ const NavBrand = styled.h1`
 
 const Navigation = () => {
 		return (
-				<Nav>
-						<NavBrand>
-								<NavLink to="/">WeFreebies</NavLink>
-						</NavBrand>
-						<div>
-								<NavLink to="/">Home</NavLink>
-								<NavLink to="/about">About</NavLink>
-								<a href="https://github.com/irhamputra/wefreebies-2nd" target="_blank">Contribute</a>
-						</div>
-				</Nav>
+				<div className="container">
+						
+						<Nav>
+								<NavBrand>
+										<NavLink to="/">WeFreebies</NavLink>
+								</NavBrand>
+								<div>
+										<NavLink to="/">Home</NavLink>
+										<NavLink to="/about">About</NavLink>
+										<a href="https://github.com/irhamputra/wefreebies-2nd" target="_blank">Contribute</a>
+								</div>
+						</Nav>
+				</div>
+		
 		)
 };
 

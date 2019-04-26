@@ -6,15 +6,13 @@ const HeroContainer = styled.div`
 	color: white;
 	margin: 0;
 	padding: 70px;
-	height: 400px;
+	border-radius: 10px;
 	
 	@media screen and (max-width: 768px){
-		height: 450px;
 		padding: 50px;
 	}
 	
 	@media screen and (max-width: 414px){
-		height: 600px;
 		padding: 40px;
 	}
 `;
@@ -25,14 +23,16 @@ const Title = styled.h1`
 `;
 
 const Hero = () => (
-		<HeroContainer>
-				<Title>
-						A hand picked directory of the best free
-						<br/>resources for creative, because we love a free stuff 🖤
-				</Title>
-				<hr/>
-				<h2 style={{'text-align': 'center', 'margin-top': '80px'}}>Categories</h2>
-		</HeroContainer>
+		<div className="container">
+				<HeroContainer>
+						<Title>
+								A hand picked directory of the best free
+								<br/>resources for creative, because we love a free stuff 🖤
+						</Title>
+						<p>High quality resources curated by the professional in graphic designer, video maker and animator</p>
+				</HeroContainer>
+		</div>
+
 );
 
 export default Hero
